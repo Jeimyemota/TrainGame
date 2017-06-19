@@ -1,0 +1,20 @@
+.jumbotron {
+	border-radius: 99px 99px 99px 99px;
+	-moz-border-radius: 99px 99px 99px 99px;
+	-webkit-border-radius: 99px 99px 99px 99px;
+	border: 8px solid #000000;
+	background-color: #9d79bd;
+	color: #fff;
+}
+#trainTable{
+	border-radius: 99px 99px 99px 99px;
+	-moz-border-radius: 99px 99px 99px 99px;
+	-webkit-border-radius: 99px 99px 99px 99px;
+	border: 8px solid #000000;
+}
+#tT{
+	border-radius: 99px 99px 99px 99px;
+	-moz-border-radius: 99px 99px 99px 99px;
+	-webkit-border-radius: 99px 99px 99px 99px;
+	border: 8px solid #000000;
+}

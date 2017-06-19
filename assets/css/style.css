@@ -1,20 +1,16 @@
 .jumbotron {
-	border-radius: 99px 99px 99px 99px;
-	-moz-border-radius: 99px 99px 99px 99px;
-	-webkit-border-radius: 99px 99px 99px 99px;
-	border: 8px solid #000000;
+	border-radius: 0px 132px 0px 140px;
+-moz-border-radius: 0px 132px 0px 140px;
+-webkit-border-radius: 0px 132px 0px 140px;
+border: 8px solid #000000;
+
 	background-color: #9d79bd;
 	color: #fff;
 }
-#trainTable{
-	border-radius: 99px 99px 99px 99px;
-	-moz-border-radius: 99px 99px 99px 99px;
-	-webkit-border-radius: 99px 99px 99px 99px;
-	border: 8px solid #000000;
+body {
+	font-family: "georgia", "times";
+	color: #9d79bd;
 }
-#tT{
-	border-radius: 99px 99px 99px 99px;
-	-moz-border-radius: 99px 99px 99px 99px;
-	-webkit-border-radius: 99px 99px 99px 99px;
-	border: 8px solid #000000;
+table {
+	color: #9d79bd;
 }

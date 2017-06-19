@@ -1,4 +1,5 @@
-  var config = {
+
+    var config = {
     apiKey: "AIzaSyD8HwCAiWRpM4YoN-54fW-pkZ_fK4Zmeqs",
     authDomain: "train-schedule-ce8d1.firebaseapp.com",
     databaseURL: "https://train-schedule-ce8d1.firebaseio.com",
@@ -9,8 +10,6 @@
   firebase.initializeApp(config);
 var database = firebase.database();
 
-
-//adding trains
   $('#add-user').on('click', function(event){
     event.preventDefault();
 
@@ -57,7 +56,7 @@ return false;
   var trainName = childSnapshot.val().name;
   var destination = childSnapshot.val().destination;
   var firstTrain = childSnapshot.val().timeInput;
-   var frequency = childSnapshot.val().frequencyInput;
+  var frequency = childSnapshot.val().frequencyInput;
   // departing Train pushed back, this make sure it comes before current time
   var firstTimeConverted = moment(firstTrain, "HH:mm");
   console.log(firstTimeConverted);
@@ -74,5 +73,5 @@ return false;
   var minToTrain = frequency - timeRemainder;
   // next train
   var nTrain = moment().add(minToTrain, "minutes").format("HH:mm");
-  $("#trainTable>tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + nTrain + "</td><td>" + frequency + "</td><td>" + minToTrain + "</td></tr>");
+  $("#trainTable").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + nTrain + "</td><td>" + frequency + "</td><td>" + minToTrain + "</td></tr>");
 });

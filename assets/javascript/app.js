@@ -73,5 +73,24 @@ return false;
   var minToTrain = frequency - timeRemainder;
   // next train
   var nTrain = moment().add(minToTrain, "minutes").format("HH:mm");
-  $("#trainTable").append("<tr><td>" + tName + "</td><td>" + destination + "</td><td>" + nTrain + "</td><td>" + frequency + "</td><td>" + minToTrain + "</td></tr>");
+  $("#trainTable").append("<tr><td>" + tName + "</td><td>" + destination + "</td><td>" + frequency  + "</td><td>" + nTrain + "</td><td>" + minToTrain + "</td></tr>");
 });
+
+
+//Time
+
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}

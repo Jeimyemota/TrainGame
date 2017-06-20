@@ -25,3 +25,10 @@ table {
 	background-color: #9d79bd;
 	border-color: #9d79bd;
 }
+
+#txt {
+	position: relative;
+	text-align: center;
+	font-size: 52px;
+	padding: 20px;
+}

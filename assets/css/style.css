@@ -32,3 +32,8 @@ table {
 	font-size: 52px;
 	padding: 20px;
 }
+#trainPic {
+	position: absolute;
+	left: 10px;
+
+}

@@ -14,3 +14,10 @@ body {
 table {
 	color: #9d79bd;
 }
+#trainTable {
+	color: #9d79bd;
+}
+#tT {
+	background-color: #9d79bd;
+	border-color: #9d79bd;
+}

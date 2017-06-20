@@ -53,7 +53,7 @@ return false;
  database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   console.log(childSnapshot.val());
   // storing childsnapshots into vars. 
-  var trainName = childSnapshot.val().name;
+  var tName = childSnapshot.val().trainName;
   var destination = childSnapshot.val().destination;
   var firstTrain = childSnapshot.val().timeInput;
   var frequency = childSnapshot.val().frequencyInput;
@@ -73,5 +73,5 @@ return false;
   var minToTrain = frequency - timeRemainder;
   // next train
   var nTrain = moment().add(minToTrain, "minutes").format("HH:mm");
-  $("#trainTable").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + nTrain + "</td><td>" + frequency + "</td><td>" + minToTrain + "</td></tr>");
+  $("#trainTable").append("<tr><td>" + tName + "</td><td>" + destination + "</td><td>" + nTrain + "</td><td>" + frequency + "</td><td>" + minToTrain + "</td></tr>");
 });
